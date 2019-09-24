@@ -1,0 +1,11 @@
+#!/usr/bin/python
+import subprocess
+import time
+
+dummy = subprocess.Popen("exec ./d 3v3 5", shell=True)
+cc1 = subprocess.Popen("exec ./cc 1", shell=True)
+time.sleep(5)
+dummy.kill()
+raw_input()
+cc1.kill()
+cc2.kill()
